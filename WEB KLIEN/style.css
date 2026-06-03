@@ -1,0 +1,169 @@
+/*nav*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #111844, #4B5694, #7288AE);
+    min-height: 90vh;
+    color: #F8FAFC;
+}
+
+.navbar {
+    background-color: rgb(255, 2, 2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 30%;
+    object-fit: cover;
+}
+
+.logo h2 {
+    color: white;
+    font-size: 22px;
+}
+
+/*Nav end*/
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    
+}
+
+.item {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 20px;
+    flex-shrink: 0;
+    background-color: rgb(249, 4, 4);
+    border-radius: 18px;
+    box-shadow: 0px 0px 2px 2px rgb(40, 12, 12);
+    box-sizing: border-box;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    text-align: center;
+
+    border-radius: 8px;
+}
+
+button {
+    width: 150px;
+
+    background-color: rgb(31, 31, 31);
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 15px;
+
+    /* Transisi */
+    transition: 0.3s;
+}
+
+/* Saat disentuh / diarahkan */
+button:hover {
+    background-color: rgb(45, 36, 38);
+    transform: scale(1.05);
+}
+
+.img {
+    background: black;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+
+    /* Bayangan */
+    box-shadow: 0 4px 15px rgba(14, 28, 58, 0.3);
+
+    /* Transisi */
+    transition: all 0.3s ease;
+}
+
+.img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 25px rgba(0, 10, 31, 0.5);
+}
+
+.img:active {
+    transform: translateY(1px);
+    box-shadow: 0 80px 10px rgba(0, 81, 255, 0.3);
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 18px;
+}
+
+/* HP */
+@media (max-width: 575px) {
+
+    .img {
+        max-width: 130px;
+        margin: 8px;
+    }
+
+    .item {
+        width: 90%;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    button {
+        width: 110px;
+        margin: 8px;
+    }
+}
+
+/* Tablet kecil */
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .img {
+        max-width: 170px;
+    }
+}
+
+/* Tablet besar */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .img {
+        max-width: 190px;
+    }
+}
+
+/* Laptop */
+@media (min-width: 992px) {
+
+    .img {
+        max-width: 220px;
+    }
+}
